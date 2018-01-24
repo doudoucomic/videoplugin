@@ -1,0 +1,253 @@
+
+
+/*********************播放按钮************************/
+.video-js .customer_play{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../img/controlbar/playback_btn_able.png) 15px 15px no-repeat;
+    cursor: pointer;
+    text-align:center
+}
+
+.video-js .customer_pause{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../img/controlbar/pause.png) 10px 10px no-repeat;
+    cursor: pointer;
+    text-align:center
+}
+
+
+/********************全屏按钮******************/
+.video-js .fullscreen_customBtn{
+    position: relative;
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: url(../img/controlbar/fullscreen_btn_able.png) 15px 15px no-repeat;
+    cursor: pointer;
+}
+
+.video-js .fullscreen_customBtn:hover{
+    background: url(../img/controlbar/fullscreen_btn_hover.png) 15px 15px no-repeat;
+}
+
+.video-js .fullscreen_customBtn:active{
+    background: url(../img/controlbar/fullscreen_btn_click.png) 15px 15px no-repeat;
+}
+
+.video-js .restore_customBtn{
+    position: relative;
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: url(../img/controlbar/restore_btn_able.png) 15px 15px no-repeat;
+    cursor: pointer;
+
+}
+
+
+.video-js .restore_customBtn:hover{
+    background: url(../img/controlbar/restore_btn_hover.png) 15px 15px no-repeat;
+}
+
+.video-js .restore_customBtn:active{
+    background: url(../img/controlbar/restore_btn_click.png) 15px 15px no-repeat;
+}
+
+
+/******************************弹幕开关按钮***************************************/
+.video-js .danmuswitch {
+    position: relative;
+    float: left;
+    width: 50px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+    margin-top: 18px;
+
+}
+
+.video-js .danmuswitch-checkbox {
+    display: none;
+}
+
+.video-js .danmuswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    width: 50px;
+    height:15px;
+}
+
+.video-js .danmuswitch-label-nochose{
+    background:url(../img/controlbar/danmu_switchbar_able.png) no-repeat;
+}
+
+.video-js .danmuswitch-label-chose {
+    background:url(../img/controlbar/danmu_switchbar_hover.png) no-repeat;
+}
+
+
+.video-js .danmuswitch-switch {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-top: 0px;
+    margin-left:-10px;
+    background: url(../img/controlbar/danmu_choseBtn.png) no-repeat;
+    border-radius: 20px;
+}
+
+.video-js .danmuswitch-switch-click {
+    right:0px;
+}
+
+.video-js .danmulabel{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height:50px;
+    font-size: 12px;
+    margin-top: 18px;
+
+}
+
+.video-js .danmulabel-nochose{
+    color: #767676;
+}
+
+
+.video-js .danmulabel-chose{
+    color: #097fac;
+}
+
+.video-js .customer_volume{
+    display: inline-block;
+    float:right;
+    width:50px;
+    height: 50px;
+    background:url(../img/controlbar/音量按钮1.png) 15px 15px no-repeat;
+    cursor: pointer;
+    text-align:center;
+}
+
+.video-js .customer_volume:hover{
+    background: url(../img/controlbar/音量按钮2.png) 15px 15px no-repeat;
+}
+
+.video-js .customer_volume:active{
+    background: url(../img/controlbar/音量按钮3.png) 15px 15px no-repeat;
+}
+
+
+/**滑条*/
+#slider-vertical{
+    position:absolute;
+    width: 2px;
+    height:116px;
+    background: url('../img/controlbar/音频控制条1.png') repeat;
+    margin-left: 9px;
+    margin-top:6px;
+}
+
+#slider-vertical .ui-slider-range {
+    width: 3px;
+    background:url('../img/controlbar/音频控制条2.png') repeat;
+
+    margin-left: -1px;
+    /*position: absolute;*/
+    z-index:2;
+}
+
+
+#slider-vertical .ui-slider-handle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background:url('../img/controlbar/音频控制条3.png') no-repeat;
+    background-position:-6px -2px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+}
+
+#idbackground{
+    width: 30px;
+    height:128px;
+    background: url('../img/controlbar/音频控制条底.png') no-repeat;
+    position:absolute;
+    float: left;
+    z-index:3;
+}
+/********************视频时间******************/
+.progressTime{
+    position: relative;
+    float: left;
+    margin-top: 19px;
+}
+.videoPanelMenuBtn{
+}
+
+/********************视频播放条******************/
+/*整体*/
+.progressBar
+{
+   position: relative;
+   width: 100%;
+   height: 10px;
+   background: rgba(0,0,0,.5);
+   bottom: 0.5rem;
+   z-index: 1;
+
+}
+/*已播放时间*/
+.timeBar
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-image: -webkit-linear-gradient(left,#57a900,#97ff00 80%,#dee2da);
+
+}
+/*缓存时间*/
+.bufferBar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background: #828282;
+
+}
+/*拖动白点*/
+.processbtn {
+
+   background-color: #fff;
+   border-radius: 50%;
+   position: absolute;
+   cursor: pointer;
+   display: block;
+   height: 10px;
+   width: 10px;
+   opacity: 1;
+    -webkit-box-shadow:-1px 0 5px #626262;
+}
+
+
+
+
+
+
