@@ -49,8 +49,8 @@ class Videopluhin extends React.Component {
             <Video width="800px" height="600px"
             poster={this.props.poster!== undefined ? this.props.poster : " "} 
             video={this.props.videoUrl} 
-            definition={this.props.definition} 
-            playInfoList={this.props.playInfoList} 
+            definition={this.props.definition!== undefined ? this.props.definition : " "} 
+            playInfoList={this.props.playInfoList!== undefined ? this.props.playInfoList : " "} 
             />
 
             </div>

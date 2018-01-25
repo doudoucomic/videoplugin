@@ -39,8 +39,7 @@ class Video extends Component {
                         width={width} height={height} 
                         controls="true"
                         data-setup='{ "html5" : { "nativeTextTracks" : false } }'
-                        poster={poster}
-                        playInfoList={this.props.playInfoList}>
+                        poster={poster}>
                         <source src={video} type='video/mp4' />
                         <div id="danmu"></div>
                     </video>

@@ -1,6 +1,6 @@
 {
   "name": "videoplugin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "default react",
   "main": "index.js",
   "dependencies": {
