@@ -36,7 +36,7 @@ class Video extends Component {
             <div>
                 <div id="videocontainer">
                     <video id="idVideo" className="video-js vjs-default-skin  vjs-big-play-centered"
-                        width={width} height={height} align="middle"
+                        width={width} height={height} 
                         controls="true"
                         data-setup='{ "html5" : { "nativeTextTracks" : false } }'
                         poster={poster}
